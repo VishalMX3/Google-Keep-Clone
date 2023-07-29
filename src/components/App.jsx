@@ -6,10 +6,12 @@ import notes from "../notes";
 import CreateArea from "./CreateArea";
 
 function App() {
+
+  function addNote(){}
   return (
     <>
       <Header />
-      <CreateArea />
+      <CreateArea onAdd={addNote}/>
      
       {notes.map(note => (
       <Note 
